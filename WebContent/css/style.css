@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FAFAFC !important;
+}
+header{
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    background-color: white;
+    height: 46px;
+    margin-top: -20px;
+}
+.header_groupe{
+    height:12px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.Logo{
+    cursor: pointer;
+    color: #6984FF;
+    margin-top: 20px;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+li{
+    list-style-type: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    list-style-type: none;
+    margin-top: 32px;
+}
+li > a{
+    font-family:'Montserrat';
+    background-color: #6984FF;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+section{
+    margin-top: 60px;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+   
+    
+}
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* card */
+.card{
+
+background-color: white;
+width: 26.6%;
+border-radius: 11px;
+font-family: 'Montserrat';
+margin-top: 20px;
+margin: 10px;
+
+
+}
+.search{
+    margin-bottom: 20px;
+}
+.card-div{
+    padding: 20px;
+}
+.img_prdt > img{
+    width: 100%;
+
+}
+.Desc{
+    font-family: 'Montserrat';
+    margin-top: 10px;
+}
+.Start{
+    margin-top: 10px;
+}
+.btn-add{
+    background-color: #6984FF;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btn-Favorite{
+    border: 1px solid #6984FF;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    margin-top: 20px;
+}
+.btn-add a{
+    padding: 90px;
+    text-decoration: none;
+    color: white;
+}
+.btn-Favorite a{
+    padding: 90px;
+}
+/* Login-Form */
+.Login-form{
+    text-align: center;
+    background-color: white;
+    width: 26%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5%;
+}
+.Login-form > h1{
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+.Login-form > .block-input-1 > input{
+    margin-top: 20px;
+    border:1px solid black;
+    border-top-left-radius : 80px 80px;
+    border-bottom-left-radius : 80px 80px;
+    border-top-right-radius : 80px 80px;
+    border-bottom-right-radius : 80px 80px;
+    height: 50px;
+    width: 99%;
+    outline: none;
+    
+}
+input::placeholder{
+    text-align: center;
+}
+.Login-form > .block-input-2 > input{
+    margin-top: 20px;
+    border:1px solid black;
+    border-top-left-radius : 80px 80px;
+    border-bottom-left-radius : 80px 80px;
+    border-top-right-radius : 80px 80px;
+    border-bottom-right-radius : 80px 80px;
+    height: 50px;
+    width: 100%;
+    outline: none;
+}
+
+.Login-form > .block-input-3 > input{
+    margin-top: 20px;
+    border:1px solid black;
+    border-top-left-radius : 80px 80px;
+    border-bottom-left-radius : 80px 80px;
+    border-top-right-radius : 80px 80px;
+    border-bottom-right-radius : 80px 80px;
+    height: 50px;
+    width: 100%;
+    outline: none;
+}
+
+.block-input-btn > input{
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    background-color: #6984FF;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    width: 100px;
+}
+.form-search{
+display: inline-block;
+}
+
+/*Admin*/
+.search-txt{
+    border:1px solid black;
+    border-top-left-radius : 80px 80px;
+    border-bottom-left-radius : 80px 80px;
+    border-top-right-radius : 80px 80px;
+    border-bottom-right-radius : 80px 80px;
+    outline: none;
+    padding: 10px;
+}
+tr >td{
+    padding: 20px;
+}
+.btn-search{
+    background-color: #6984FF;
+    border:1px solid white;
+    border-top-left-radius : 80px 80px;
+    border-bottom-left-radius : 80px 80px;
+    border-top-right-radius : 80px 80px;
+    border-bottom-right-radius : 80px 80px;
+    outline: none;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    font-family: 'Montserrat';
+}
+.btn-Modifier{
+    background-color: #1FF064;
+    border:1px solid white;
+    border-top-left-radius : 80px 80px;
+    border-bottom-left-radius : 80px 80px;
+    border-top-right-radius : 80px 80px;
+    border-bottom-right-radius : 80px 80px;
+    outline: none;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-family: 'Montserrat';
+    color: white;
+    text-decoration: none;
+    margin:10px;
+}
+.btn-Modifier:hover{
+    color: white ;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-Supprimer{
+    background-color: #F60808;
+    border:1px solid white;
+    border-top-left-radius : 80px 80px;
+    border-bottom-left-radius : 80px 80px;
+    border-top-right-radius : 80px 80px;
+    border-bottom-right-radius : 80px 80px;
+    outline: none;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-family: 'Montserrat';
+    color: white;
+    text-decoration: none;
+    margin:10px;
+    
+}
+.btn-Supprimer:hover{
+    color: white ;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-Add{
+    background-color: #6984FF;
+    border:1px solid white;
+    border-top-left-radius : 80px 80px;
+    border-bottom-left-radius : 80px 80px;
+    border-top-right-radius : 80px 80px;
+    border-bottom-right-radius : 80px 80px;
+    outline: none;
+    padding: 10px 40px 10px 40px;
+    color: white;
+    font-family: 'Montserrat';
+}
+.circle{
+    border:1px solid;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    width: 80px;
+    display: block;
+    margin: auto;
+    border:none;
+}
+.column-img{
+    padding: 24px !important;
+}
+.column-title{
+    width: 300px;
+}
+
+.btn-Add:hover{
+    text-decoration: none;
+    color: white;
+}
+.btn-Add > i > img{
+    width: 19px;
+    margin: 10px;
+}
+/* Footer */
+footer{
+    margin-top: 30px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #6984FF;
+}
+.footer-Login{
+    
+    margin-top: 301px;
+
+
+}
+.footer-Sign-in{
+
+    margin-top: 228px;
+
+}
