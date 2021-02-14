@@ -2,6 +2,8 @@ package web;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -41,6 +43,24 @@ public class Authentification extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
+    
+	public  boolean validate_email(String email) {
+		Pattern regex = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
+		Matcher matcher = regex.matcher(email);
+		return matcher.find();
+	}
+	
+	public boolean validate_password(String password) {
+		boolean test = true;
+		if(password.length() < 8){
+			
+			test = false;
+			
+		}
+		
+		return test;
+		
+	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -61,6 +81,10 @@ public class Authentification extends HttpServlet {
 		String email = request.getParameter("Email");
 		String password = request.getParameter("password");
 		User a = new User(null,email,password,null);
+		if(!validate_email(email) && !validate_password(password)) {
+			request.setAttribute("error","email or password incorect");
+			request.getRequestDispatcher("Login.jsp").forward(request,response);
+		}else {
 			try {
 				User user = auth.Auth(a.getEmail(),a.getPassword());
 				if(user.getRole().equals("client")){
@@ -80,6 +104,9 @@ public class Authentification extends HttpServlet {
 				request.setAttribute("error",e.getMessage());
 				request.getRequestDispatcher("Login.jsp").forward(request,response);
 			}
+		}
+
+
 	}
 
 }
